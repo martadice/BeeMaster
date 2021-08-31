@@ -8,6 +8,7 @@ public class DBConnection {
         try {
             String dbURL = "jdbc:sqlite:beemaster.db";
             connection = DriverManager.getConnection(dbURL);
+//          Create table colony
             Statement statement = connection.createStatement();
             String sqlStatement = "CREATE TABLE IF NOT EXISTS colonies" +
                     " (colony_id INTEGER PRIMARY KEY NOT NULL, " +
@@ -29,5 +30,6 @@ public class DBConnection {
                 SQLException exception) {
             System.out.println("Database issues: " + exception);
         }
+
     }
 }
