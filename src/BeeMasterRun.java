@@ -31,6 +31,8 @@ public class BeeMasterRun {
             System.out.println("Select 4 to show and edit the information about the bee hive");
             System.out.println("Select 5 to add a new bee hive to the location");
             System.out.println("Select 6 to delete an existing bee hive");
+            System.out.println("Select 7 to add a new location");
+            System.out.println("Select 8 to delete a location");
             System.out.println("Select 0 to exit the application");
             menu = scanner.nextInt();
 
@@ -51,6 +53,12 @@ public class BeeMasterRun {
 
                     break;
                 case 6:
+
+                    break;
+                case 7:
+
+                    break;
+                case 8:
 
                     break;
                 default:
